@@ -5,6 +5,13 @@ input.onButtonPressed(Button.A, function () {
         reverse = 1
     }
 })
+input.onSound(DetectedSound.Loud, function () {
+    if (reverse == 1) {
+        reverse = 0
+    } else {
+        reverse = 1
+    }
+})
 let led2 = 0
 let reverse = 0
 Freenove.Initialization(DigitalPin.P0, DigitalPin.P1, DigitalPin.P2)
